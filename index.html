@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notion-inspired Todo List</title>
+    <title>CS434 Todo List</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
-        <h1>Notion-inspired Todo List</h1>
-        <div class="todo-input">
-            <input type="text" id="todo-input" placeholder="What needs to be done?">
-            <button id="add-todo">Add</button>
+        <div class="container1">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>Hien Hoang</h2>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Inbox</a></li>
+                    <li><a href="#">Settings & Members</a></li>
+                </ul>
+                <div class="favorites">
+                    <h3>Favorites</h3>
+                    <ul>
+                        <li><a href="#">Second Brain</a></li>
+                    </ul>
+                </div>
+                <div class="teamspaces">
+                    <h3>Teamspaces</h3>
+                    <ul>
+                        <li><a href="#">CS 434</a></li>
+                        <li><a href="#">Dự án To-do list</a></li>
+                        <li><a href="#">Nghiên cứu khoa học Team</a></li>
+                    </ul>
+                </div>
+                <div class="private">
+                    <h3>Private</h3>
+                    <ul>
+                        <li><a href="#">Second Brain</a></li>
+                    </ul>
+                </div>
+            </aside>
         </div>
-        <ul id="todo-list"></ul>
+        <div class="container2">
+            <div class="main-app">
+
+                <h1>Notion-inspired Todo List</h1>
+                <div class="todo-input">
+                    <input type="text" id="todo-input" placeholder="What needs to be done?">
+                    <button id="add-todo">Add</button>
+                </div>
+
+                <ul id="todo-list"></ul>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
